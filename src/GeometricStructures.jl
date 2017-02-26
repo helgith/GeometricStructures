@@ -1,5 +1,10 @@
 module GeometricStructures
 
-# package code goes here
+include("points.jl")
+
+export
+    AbstractPoint,
+    AbstractPoint2D,
+    Point2D
 
 end # module
