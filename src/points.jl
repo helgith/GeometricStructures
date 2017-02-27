@@ -1,5 +1,6 @@
 abstract AbstractPoint
 abstract AbstractPoint2D <: AbstractPoint
+import Base.convert
 
 
 immutable Point2D{T <: Real} <: AbstractPoint2D
@@ -16,3 +17,5 @@ gety(p::Point2D) = p.y
 getpoint{T <: Real}(points::Array{T, 2}, i::Int) = points[i,:]
 getx{T <: Real}(p::Array{T,1}) = p[1]
 gety{T <: Real}(p::Array{T,1}) = p[2]
+
+convert{T <: Real}(Point2D, p::Array{T,1}) = Point2D(getx(p), gety(p))
