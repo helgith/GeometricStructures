@@ -14,14 +14,14 @@ Git is generally used as a Source Code Version Tool for Julia projects.
 ### Package creation
 You need to install package PkgDev
 ***
-**julia> Pkg.add("PkgDev")**
+`julia> Pkg.add("PkgDev")`
 ***
 You can now create the package locally through
 ***
-**julia> using PkgDev**
+`julia> using PkgDev`
 
-**julia> PkgDev.generate("GeometricStructures", "MIT")**
+`julia> PkgDev.generate("GeometricStructures", "MIT")`
 
-**julia> PgkDev.register("GeometricStructures", "[repository]")**
+`julia> PgkDev.register("GeometricStructures", "[repository]")`
 ***
 The package is generated locally in directory ~julia/v0.5/GeometricStructures.
