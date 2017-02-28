@@ -1,5 +1,10 @@
+"""
+## Convex hull
 
-function convexhull(points::Array{Float64,2})
+Calculation f convex hull of a sequence of points represented through an Float64
+Array of N rows and 2 columns
+"""
+function convexhull{T <: Real}(points::Array{T,2})
     n = size(points,1)
     # Sort the points by x-coordinate, resulting in a sequence p 1 , . . . , p n
     p = sortrows(points)

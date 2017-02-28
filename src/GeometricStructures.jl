@@ -8,6 +8,7 @@ export
     AbstractPoint,
     AbstractPoint2D,
     Point2D,
-    LineSegment2D
+    LineSegment2D,
+    convexhull
 
 end # module
